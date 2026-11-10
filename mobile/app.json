@@ -17,9 +17,7 @@
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#1d2830"
       },
-      "permissions": [
-        "CAMERA"
-      ]
+      "permissions": ["CAMERA"]
     },
     "plugins": [
       [
@@ -34,7 +32,7 @@
       "expo-status-bar"
     ],
     "extra": {
-      "apiUrl": "http://10.0.2.2:4000"
+      "apiUrl": "https://batirent-api.onrender.com"
     }
   }
 }
