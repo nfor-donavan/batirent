@@ -1,0 +1,38 @@
+export const STRINGS = {
+  fr: {
+    by: 'par', signIn: 'Connexion', email: 'E-mail', password: 'Mot de passe', login: 'Se connecter', server: 'Serveur', serverHint: "Adresse de l'API BatiRent",
+    contracts: 'Contrats', contract: 'Contrat', search: 'Rechercher…', all: 'Tous', Active: 'En cours', Overdue: 'En retard', Disputed: 'Litige', Returned_Settled: 'Clôturé',
+    lateBy: '{n} j de retard', leftDays: '{n} j restants', dueToday: "Échéance aujourd'hui", out: 'Encore dehors', units: 'unités', empty: 'Aucun contrat.',
+    lines: 'Matériel', sentOut: 'Sorti', stillOut: 'Dehors', penalty: 'Pénalité accumulée', recordReturn: 'Enregistrer un retour', closed: 'Contrat clôturé',
+    site: 'Chantier', client: 'Client', call: 'Appeler',
+    returnTitle: 'Retour de matériel', good: 'OK', damaged: 'Endommagé', lost: 'Perdu', all2: 'Tout', photos: 'Photos', takePhoto: 'Prendre une photo', photoRequired: 'Une photo est obligatoire pour le matériel endommagé.',
+    notes: 'Observations', signer: 'Remis par (nom)', submit: 'Valider le retour', confirmTitle: 'Confirmer le retour ?', confirmBody: '{n} unité(s) seront enregistrées.', cancel: 'Annuler', confirm: 'Confirmer',
+    done: 'Retour enregistré.', doneClosed: 'Tout est revenu : contrat clôturé.', queued: 'Pas de réseau : retour enregistré sur le téléphone, il sera envoyé automatiquement.',
+    pending: '{n} retour(s) en attente d’envoi', logout: 'Déconnexion', retry: 'Réessayer', loading: 'Chargement…', nothingToReturn: 'Indiquez au moins une quantité.',
+    perLine: 'Photo de cette ligne', theme: 'Thème', permission: "Autorisez l'appareil photo pour continuer.", quick: 'Rapide',
+    errors: {
+      BAD_CREDENTIALS: 'E-mail ou mot de passe incorrect.', NETWORK: 'Serveur injoignable. Vérifiez le réseau.', FORBIDDEN: "Action non autorisée pour votre rôle.",
+      RETURN_EXCEEDS_OUTSTANDING: 'Quantité supérieure au solde pour {itemName} ({outstanding} restant).', PHOTO_REQUIRED_FOR_DAMAGE: 'Ajoutez une photo du matériel endommagé.',
+      CONTRACT_CLOSED: 'Contrat déjà clôturé.', CONCURRENT_MODIFICATION: 'Contrat modifié par un autre utilisateur. Rechargez.', TOO_MANY_ATTEMPTS: 'Trop de tentatives, réessayez plus tard.',
+      AUTH_INVALID: 'Session expirée.', SERVER_ERROR: 'Erreur du serveur.', PHOTO_TOO_LARGE: 'Photo trop volumineuse.', NOTHING_TO_RETURN: 'Indiquez au moins une quantité.',
+    },
+  },
+  en: {
+    by: 'by', signIn: 'Sign in', email: 'Email', password: 'Password', login: 'Sign in', server: 'Server', serverHint: 'BatiRent API address',
+    contracts: 'Contracts', contract: 'Contract', search: 'Search…', all: 'All', Active: 'Active', Overdue: 'Overdue', Disputed: 'Disputed', Returned_Settled: 'Closed',
+    lateBy: '{n} d overdue', leftDays: '{n} d left', dueToday: 'Due today', out: 'Still out', units: 'units', empty: 'No contracts.',
+    lines: 'Equipment', sentOut: 'Sent', stillOut: 'Out', penalty: 'Accrued penalty', recordReturn: 'Record a return', closed: 'Contract closed',
+    site: 'Site', client: 'Client', call: 'Call',
+    returnTitle: 'Equipment return', good: 'OK', damaged: 'Damaged', lost: 'Lost', all2: 'All', photos: 'Photos', takePhoto: 'Take a photo', photoRequired: 'A photo is required for damaged equipment.',
+    notes: 'Notes', signer: 'Handed back by (name)', submit: 'Confirm return', confirmTitle: 'Confirm the return?', confirmBody: '{n} unit(s) will be recorded.', cancel: 'Cancel', confirm: 'Confirm',
+    done: 'Return recorded.', doneClosed: 'Everything is back: contract closed.', queued: 'No network: return saved on this phone and will be sent automatically.',
+    pending: '{n} return(s) waiting to upload', logout: 'Sign out', retry: 'Retry', loading: 'Loading…', nothingToReturn: 'Enter at least one quantity.',
+    perLine: 'Photo for this line', theme: 'Theme', permission: 'Allow camera access to continue.', quick: 'Quick',
+    errors: {
+      BAD_CREDENTIALS: 'Incorrect email or password.', NETWORK: 'Server unreachable. Check the network.', FORBIDDEN: 'Action not allowed for your role.',
+      RETURN_EXCEEDS_OUTSTANDING: 'Quantity exceeds the balance for {itemName} ({outstanding} left).', PHOTO_REQUIRED_FOR_DAMAGE: 'Add a photo of the damaged equipment.',
+      CONTRACT_CLOSED: 'Contract already closed.', CONCURRENT_MODIFICATION: 'Contract changed by another user. Reload.', TOO_MANY_ATTEMPTS: 'Too many attempts, try later.',
+      AUTH_INVALID: 'Session expired.', SERVER_ERROR: 'Server error.', PHOTO_TOO_LARGE: 'Photo too large.', NOTHING_TO_RETURN: 'Enter at least one quantity.',
+    },
+  },
+};

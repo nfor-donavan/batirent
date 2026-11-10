@@ -1,0 +1,31 @@
+# Render Blueprint: deploys the API as a single web service.
+services:
+  - type: web
+    name: batirent-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    # Use at least the "Starter" plan: free instances sleep, and a sleeping instance cannot run the
+    # 06:00 overdue sweep or send SMS on time. (The server also re-runs the sweep at every boot.)
+    plan: starter
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false            # paste your MongoDB Atlas connection string
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        sync: false            # e.g. https://batirent.vercel.app
+      - key: PUBLIC_API_URL
+        sync: false            # e.g. https://batirent-api.onrender.com
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: SMS_PROVIDER
+        value: console
